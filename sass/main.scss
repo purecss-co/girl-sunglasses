@@ -684,32 +684,30 @@ body {
 }
 
 .sunglasses-left {
-  &-1 {
-    z-index: 2;
-    width: 19.9vmin;
-    height: 19.6vmin;
-    background: $glass-color;
-    top: -4.4vmin;
-    left: -25vmin;
+  z-index: 2;
+  width: 19.9vmin;
+  height: 19.6vmin;
+  background: $glass-color;
+  top: -4.4vmin;
+  left: -25vmin;
+  border-radius: 50%;
+
+  &::before {
+    width: 16.6vmin;
+    height: 16.25vmin;
+    background: $glass-darken-color;
+    top: 1.65vmin;
+    left: 1.6vmin;
     border-radius: 50%;
+  }
 
-    &::before {
-      width: 16.6vmin;
-      height: 16.25vmin;
-      background: $glass-darken-color;
-      top: 1.65vmin;
-      left: 1.6vmin;
-      border-radius: 50%;
-    }
-
-    &::after {
-      width: 15.85vmin;
-      height: 7.85vmin;
-      background: $glass-dark-color;
-      top: 9.1vmin;
-      transform: rotate(31deg);
-      border-radius: 0 0 7.85vmin 7.85vmin;
-    }
+  &::after {
+    width: 15.85vmin;
+    height: 7.85vmin;
+    background: $glass-dark-color;
+    top: 9.1vmin;
+    transform: rotate(31deg);
+    border-radius: 0 0 7.85vmin 7.85vmin;
   }
 }
 
